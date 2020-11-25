@@ -1,0 +1,11 @@
+
+.Footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ 
+}
+
+.Footer > p {
+    text-align: center;
+}

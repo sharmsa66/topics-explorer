@@ -1,0 +1,29 @@
+.TopicList {
+    margin: 12px 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    scroll-behavior: auto;
+}
+
+.TopicList > li {
+    cursor: pointer;
+    list-style-type: none;
+    margin:10px;
+    border: 1px solid #f1eaea;
+    width:  80vw;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+
+span {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.error {
+    color: red;
+}
