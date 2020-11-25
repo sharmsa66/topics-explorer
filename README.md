@@ -3,7 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
-   Please run npm install after extracting code to a directory topic-explorer
+   Please run npm install after extracting code to a directory topic-explorer.
+   Afterwards create github access token  and  place it as key <<REACT_APP_GITHUB_API_TOKEN>> in .env file.
 
 ## Available Scripts
 
