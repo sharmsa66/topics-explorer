@@ -19,6 +19,10 @@
     text-transform: capitalize;
 }
 
+.TopicList > li:hover, li:active {
+    background-color: #dab9b9;
+}
+
 span {
     cursor: pointer;
     margin: 10px;
