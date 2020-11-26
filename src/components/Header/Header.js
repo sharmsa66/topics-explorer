@@ -16,7 +16,7 @@ const Header = () => {
     <header className="Header">
       <h1>Github Topics Explorer</h1>
       <h4>
-         {topic}  {stargazerCount}
+        {topic} {stargazerCount}
       </h4>
       <h6>Please selct item to view related topics</h6>
     </header>

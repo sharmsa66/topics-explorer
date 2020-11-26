@@ -1,15 +1,12 @@
 import React from "react";
 import TopicList from "../../components/TopicsList/TopicList";
 
-
-const TopicContainer = ()=>{
- 
+const TopicContainer = () => {
   return (
     <>
-      <TopicList/>
+      <TopicList />
     </>
   );
- 
-}
+};
 
 export default TopicContainer;

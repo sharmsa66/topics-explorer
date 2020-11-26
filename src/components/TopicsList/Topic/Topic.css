@@ -1,0 +1,8 @@
+.topic {
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #f1eaea;
+  text-align: center;
+  text-transform: capitalize;
+ }
+ 
