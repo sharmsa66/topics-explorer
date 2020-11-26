@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useQuery } from "@apollo/client";
 
 import { TopicsProviderContext } from "../../contexts/TopicsProvider";
-import Topic from "./Topic/Topic";
+import Topic from "../../components/Topic/Topic";
 
 import { GET_TOPICS } from "../../queries/topics.query";
 
