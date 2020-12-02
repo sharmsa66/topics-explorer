@@ -29,11 +29,14 @@ const TopicList = () => {
   let content;
 
   if (error) {
-    content = <div className="error">Something went worong!!! 
-    <p>{error.message}</p>
-    </div>;
+    content = (
+      <div className="error">
+        Something went worong!!!
+        <p>{error.message}</p>
+      </div>
+    );
   } else {
-    content = 
+    content = (
       <ul className="Topiclist">
         {data.topic.relatedTopics.map((topic) => (
           <Topic
@@ -43,13 +46,11 @@ const TopicList = () => {
             onItemSelected={handleItemSelected}
           />
         ))}
-      </ul>;
-    
+      </ul>
+    );
   }
 
-
-
-  return (<dv>{ content }</dv>);
+  return <div>{content}</div>;
 };
 
 export default TopicList;
