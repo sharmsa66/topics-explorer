@@ -17,7 +17,6 @@ const TopicList = () => {
   });
 
   if (loading) return "";
-  if (error) return `<div className='error'>Error! ${error.message}</div>`;
 
   const handleItemSelected = (name, stargazerCount) => {
     setState((state) => ({
@@ -27,17 +26,30 @@ const TopicList = () => {
     }));
   };
 
-  return (
-    <ul className="Topiclist">
-      {data.topic.relatedTopics.map((topic) => (
-        <Topic key={topic.name}
-          name={topic.name}
-          stargazerCount={topic.stargazerCount}
-          onItemSelected={handleItemSelected}
-        />
-      ))}
-    </ul>
-  );
+  let content;
+
+  if (error) {
+    content = <div className="error">Something went worong!!! 
+    <p>{error.message}</p>
+    </div>;
+  } else {
+    content = 
+      <ul className="Topiclist">
+        {data.topic.relatedTopics.map((topic) => (
+          <Topic
+            key={topic.name}
+            name={topic.name}
+            stargazerCount={topic.stargazerCount}
+            onItemSelected={handleItemSelected}
+          />
+        ))}
+      </ul>;
+    
+  }
+
+
+
+  return (<dv>{ content }</dv>);
 };
 
 export default TopicList;

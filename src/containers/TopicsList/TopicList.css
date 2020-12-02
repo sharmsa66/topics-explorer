@@ -1,14 +1,14 @@
 .Topiclist {
-    list-style-type: none;
-    scroll-behavior: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 800px;
-     
+    list-style-type: none;
+    scroll-behavior: auto;
+    justify-content: center;
 }
 
 
 .error {
+    text-align: center;
     color: red;
 }
