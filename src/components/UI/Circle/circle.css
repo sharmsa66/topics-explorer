@@ -1,0 +1,29 @@
+.circle {
+
+   border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    background-color: #ffa600;
+    cursor: pointer;
+    box-shadow:0 0 0 3px #fff;
+    
+}
+.circle > span::before{
+    content: '';
+   display: inline-block;
+   padding-top: 100%;/* cause here we have a square and width for percentage vertical (padding/margin) is the reference , height:100%; or height:24px; will do as well */
+   vertical-align: middle;
+}
+.circle > span {
+   text-align: center;
+   padding-left: 12px;
+   
+}
+
+
+ 
+.circle-container {
+   text-overflow: clip;
+}
+
+ 
